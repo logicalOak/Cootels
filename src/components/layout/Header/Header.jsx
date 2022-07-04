@@ -4,6 +4,29 @@ import styled from 'styled-components';
 import data from './data';
 import { Button, Container } from '../../utils/Utils';
 
+const Header = () => {
+	return (
+		<Wrapper>
+			<Container as='nav'>
+				<Link to='/'>
+					<Logo>Cotels</Logo>
+				</Link>
+				<Menu>
+					{data.menu.map((i, idx) => (
+						<li key={idx}>
+							<Link to={i.href}>{i.label}</Link>
+						</li>
+					))}
+				</Menu>
+				<Button as='a' href={data.btn.href}>
+					{data.btn.label}
+				</Button>
+			</Container>
+		</Wrapper>
+	);
+};
+
+// 🐱‍👤 Styled Components
 const Wrapper = styled.header`
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -57,27 +80,5 @@ const Menu = styled.ul`
 		}
 	}
 `;
-
-const Header = () => {
-	return (
-		<Wrapper>
-			<Container as='nav'>
-				<Link to='/'>
-					<Logo>Cotels</Logo>
-				</Link>
-				<Menu>
-					{data.menu.map((i, idx) => (
-						<li key={idx}>
-							<Link to={i.href}>{i.label}</Link>
-						</li>
-					))}
-				</Menu>
-				<Button as='a' href={data.btn.href}>
-					{data.btn.label}
-				</Button>
-			</Container>
-		</Wrapper>
-	);
-};
 
 export default Header;
