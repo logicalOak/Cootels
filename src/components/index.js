@@ -5,4 +5,5 @@ export { default as Footer } from './layout/Footer/Footer';
 export { default as Home } from './pages/Home';
 // sections
 export { default as Hero } from './sections/Hero/Hero';
+export { default as Features } from './sections/Features/Features';
 // elements
