@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Footer, Header, Home } from './index';
+import { Features, Footer, Header, Home, Rooms, Support } from './index';
 import { GlobalStyles } from '../config/GlobalStyles';
 
 const Root = () => {
@@ -10,6 +10,9 @@ const Root = () => {
 			<Header />
 			<Routes>
 				<Route path='/' exact element={<Home />} />
+				<Route path='/rooms' exact element={<Rooms />} />
+				<Route path='/reservation' exact element={<Features />} />
+				<Route path='/contact' exact element={<Support />} />
 			</Routes>
 			<Footer />
 		</Router>

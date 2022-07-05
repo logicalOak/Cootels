@@ -9,9 +9,7 @@ Hotel rental website
 #### 🧶 Screenshots:
 
 **Main Page:**
-![App Screenshot](images/screen.png)
-**Detail Page:**
-![App Screenshot](images/screen-detail.png)
+![App Screenshot](assets/preview.png)
 
 ---
 

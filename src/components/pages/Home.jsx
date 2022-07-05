@@ -1,11 +1,14 @@
 import React from 'react';
-import { Features, Hero } from '../index';
+import { Customers, Features, Hero, Rooms, Support } from '../index';
 
 const Home = () => {
 	return (
 		<>
 			<Hero />
 			<Features />
+			<Rooms />
+			<Support />
+			<Customers />
 		</>
 	);
 };
